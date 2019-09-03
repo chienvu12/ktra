@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pai</title>
+</head>
+<body>
+    <script>
+        function tryRemoveFromArray(a,m) {
+            let b= [];
+            for (let i=0 ; i< a.length ;i++) {
+                if (m == a[i]) {
+                    continue;
+                }
+                    b.push(a[i]);
+            }
+            return b;
+        }
+        let a1 = [12,6,3,7,21,5,7];
+        let n =  parseInt(prompt("Enter a number"));
+        document.write(tryRemoveFromArray(a1,n));
+    </script>
+</body>
+</html>

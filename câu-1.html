@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pai</title>
+</head>
+<body>
+    <script>
+
+        function findMaxScore(a) {
+            let max= a[0];
+            for(let i=1 ; i < a.length ; i++) {
+                if ( max < a[i]) {
+                    max = a[i] ;
+                }
+            }
+            return max;
+        }
+        let a1 = [10,5,2,8,-1,6,8];
+        document.write(findMaxScore(a1));
+    </script>
+</body>
+</html>

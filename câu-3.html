@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pai</title>
+</head>
+<body>
+    <script>
+        function Fibonacci(number) {
+            if (number < 0) {
+                return -1;
+            }
+            if (number == 1 || number == 0) {
+                return 1;
+            } else {
+                return Fibonacci(number - 1) + Fibonacci(number - 2);
+            }
+        }
+        function frintFibonacci(number) {
+            let count =" ";
+            for (i=0; ; i++) {
+                if (Fibonacci(i) < number) {
+                    count += Fibonacci(i);
+                }
+                else {
+                    break;
+                }
+            }
+            return count;
+        }
+        document.write(frintFibonacci(12) + "<br>");
+        document.write(frintFibonacci(25) + "<br>");
+    </script>
+</body>
+</html>
